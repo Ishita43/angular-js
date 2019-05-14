@@ -1,0 +1,45 @@
+.sidenav {
+  color:gray;
+  background-color: black;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  }
+  
+   
+    .nav-item{
+      display: flex;
+      align-items: center;
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+   
+    .hide2{
+      padding-left: 15px;
+      padding-right: 17px;
+      padding-bottom: 10px;
+      padding-top: 10px
+    }
+
+    .hide1{
+      width: 0px;
+      transition: width 0.3s ease-in;
+      overflow: hidden;
+      white-space: nowrap;
+      word-break: keep-all;
+      padding-bottom: 10px;
+      padding-top: 5px
+
+    }
+    .hide3{
+      width: 0px;
+    }
+
+    .expanded{
+      width: 100px!important;
+      cursor: pointer;
+    }
+
+    .is-active{
+      background-color: white;
+    }

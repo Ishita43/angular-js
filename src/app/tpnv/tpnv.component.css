@@ -1,0 +1,12 @@
+.topnav {
+ width:100%;
+  position: sticky;
+  background-color:black;
+  display:flex;
+  justify-content:space-between;
+  line-height: 3em;
+  top:0;
+  padding-top:10px;
+  padding-left:10px;
+  padding-right:10px;
+}

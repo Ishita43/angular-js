@@ -1,0 +1,52 @@
+
+<div class="sidenav">
+   <div class="nav-item" routerLink="" >
+        <div class="hide2" ><mat-icon>home</mat-icon></div>
+        <div class="hide1" [class.expanded]="message"style="padding-top: 17px"> <h3>HOME</h3></div>
+      </div>
+ 
+  
+    <div style="display:flex; " routerLink="dashboard"  >
+
+        <mat-accordion >
+            <mat-expansion-panel   style="background-color:black; color:gray;" [routerLinkActive]="'is-active'">
+              <mat-expansion-panel-header >
+                <mat-panel-title >
+                    <div style=" color:gray;" ><mat-icon>dashboard</mat-icon></div>
+                </mat-panel-title>
+                <mat-panel-description >
+                    <div  class="hide1" [class.expanded]="message" style=" color:gray"  >Dashboard</div>
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+          
+              <mat-action-row (click)='open1($event)'  [class.expanded]="message">
+                Ishita Chhabra
+              </mat-action-row>
+              <mat-action-row (click)='open2($event)' [class.expanded]="message">
+                8684024527
+              </mat-action-row>
+             
+            </mat-expansion-panel>
+            
+          </mat-accordion>
+          
+      </div> 
+     
+    <div class="nav-item" routerLink="profile" [routerLinkActive]="'is-active'">
+        <div class="hide2"><mat-icon>face</mat-icon></div>
+        <div class="hide1" [class.expanded]="message"> Profile</div>
+      </div>
+      <div class="nav-item" routerLink="settings" [routerLinkActive]="'is-active'">
+        <div class="hide2"><mat-icon>settings</mat-icon></div>
+        <div class="hide1" [class.expanded]="message">Setting</div>
+      </div>
+      <div class="nav-item" routerLink="friends" [routerLinkActive]="'is-active'">
+        <div class="hide2"><mat-icon>supervisor_account</mat-icon></div>
+        <div class="hide1" [class.expanded]="message"> Friends</div>
+      </div>
+      <div class="nav-item" (click)="openDialog()" [routerLinkActive]="'is-active'">
+        <div class="hide2"><mat-icon>logout</mat-icon></div>
+        <div class="hide1" [class.expanded]="message"> Logout</div>
+      </div>
+</div>
+  

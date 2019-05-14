@@ -1,0 +1,22 @@
+<div class="topnav">
+    <div><button type="button" class="btn btn-dark btn-sm" (click)='onclick()'><i class="fa fa-bars" style="font-size:24px;float:left;color:gray;"></i></button></div>
+    <div><span class="badge badge-secondary" style="float:right;margin-bottom:25px">5</span>
+
+      <button mat-button [matMenuTriggerFor]="menu">
+      <i class="fa fa-bell" style="font-size:24px;color:gray;float:right;"></i>
+    </button>
+    <div>
+    <mat-menu #menu="matMenu" style="color:black">
+      <button mat-menu-item>Notification 1</button>
+      <button mat-menu-item>Notification 2</button>
+      <button mat-menu-item>Notification 3</button>
+      <button mat-menu-item>Notification 4</button>
+      <button mat-menu-item>Notification 5</button>
+    </mat-menu></div>
+  </div>
+  </div>
+  
+  <div style="width:100%;overflow:auto;"> </div>
+
+
+  

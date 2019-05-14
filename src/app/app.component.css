@@ -1,0 +1,10 @@
+.main{
+  display:flex;
+  flex-direction:row;
+  height:100vh;
+  overflow:hidden;
+  width:100vw;
+  background-image: url("/assets/image/a1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
